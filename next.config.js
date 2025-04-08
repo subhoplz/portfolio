@@ -9,6 +9,17 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
+  // Performance optimizations
+  experimental: {
+    optimizeCss: true,
+    scrollRestoration: true,
+  },
+  // Enable static optimization for pages
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
+  // Optimize fonts
+  optimizeFonts: true,
+  // Enable compression
+  compress: true,
 }
 
 module.exports = nextConfig
