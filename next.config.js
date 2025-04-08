@@ -9,9 +9,9 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
-  // Performance optimizations
+  // Remove experimental features that might cause issues
   experimental: {
-    optimizeCss: true,
+    // Remove optimizeCss as it's causing issues with error pages
     scrollRestoration: true,
   },
   // Enable static optimization for pages
