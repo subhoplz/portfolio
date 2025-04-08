@@ -1,0 +1,219 @@
+.about {
+  padding: 6rem 2rem;
+  background: #fff;
+}
+
+.dark .about {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+}
+
+.dark .title {
+  color: #fff;
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.dark .description {
+  color: #ccc;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.dark .sectionTitle {
+  color: #fff;
+}
+
+.skillsContainer {
+  margin-bottom: 4rem;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.skill {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.dark .skill {
+  background: #2a2a2a;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+.skillHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.skillIcon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #0070f3;
+}
+
+.skillName {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.dark .skillName {
+  color: #fff;
+}
+
+.skillBar {
+  height: 8px;
+  background: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dark .skillBar {
+  background: #3a3a3a;
+}
+
+.skillProgress {
+  height: 100%;
+  background: #0070f3;
+  border-radius: 4px;
+}
+
+.timelineContainer {
+  margin-top: 4rem;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #0070f3;
+}
+
+.timelineItem {
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: -2.4rem;
+  top: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #0070f3;
+  border: 3px solid #fff;
+}
+
+.dark .timelineItem::before {
+  border-color: #1a1a1a;
+}
+
+.timelineYear {
+  font-weight: 600;
+  color: #0070f3;
+  margin-bottom: 0.5rem;
+}
+
+.timelineTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+.dark .timelineTitle {
+  color: #fff;
+}
+
+.timelineCompany {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.dark .timelineCompany {
+  color: #ccc;
+}
+
+.timelineDescription {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+.dark .timelineDescription {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 4rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timelineItem::before {
+    left: -1.9rem;
+  }
+} 

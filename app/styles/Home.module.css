@@ -1,0 +1,38 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.header {
+  width: 100%;
+  padding: 20px;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+}
+
+.animationContainer {
+  width: 100%;
+  height: 400px;
+  margin: 20px 0;
+}
+
+.profileImage {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 20px 0;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+}
