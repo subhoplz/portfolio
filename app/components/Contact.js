@@ -48,17 +48,17 @@ const Contact = () => {
         {
             name: 'GitHub',
             icon: <FiGithub />,
-            url: 'https://github.com/yourusername',
+            url: 'https://github.com/subhoplz',
         },
         {
             name: 'LinkedIn',
             icon: <FiLinkedin />,
-            url: 'https://linkedin.com/in/yourusername',
+            url: 'https://www.linkedin.com/in/subhoplz/',
         },
         {
             name: 'Twitter',
             icon: <FiTwitter />,
-            url: 'https://twitter.com/yourusername',
+            url: 'https://twitter.com/subhoplz',
         },
     ];
 
@@ -91,7 +91,7 @@ const Contact = () => {
                             <FiMail className={styles.icon} />
                             <div>
                                 <h3 className={styles.infoTitle}>Email</h3>
-                                <p className={styles.infoText}>your.email@example.com</p>
+                                <p className={styles.infoText}>subhadip.dutta.m1@gmail.com</p>
                             </div>
                         </div>
 

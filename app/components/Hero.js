@@ -97,7 +97,7 @@ const Hero = () => {
                     transition={{ duration: 0.8 }}
                     className={styles.title}
                 >
-                    Hi, I'm <span className={styles.highlight}>Your Name</span>
+                    Hi, I'm <span className={styles.highlight}>Subhadip Dutta</span>
                 </motion.h1>
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
