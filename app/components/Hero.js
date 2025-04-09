@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Hero.module.css';
+import { FiLayout, FiServer, FiDatabase, FiCode } from 'react-icons/fi';
 
 const Hero = () => {
     const canvasRef = useRef(null);
@@ -105,7 +106,7 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className={styles.subtitle}
                 >
-                    Full Stack Developer
+                    Aspiring Frontend Engineer & Software Developer
                 </motion.h2>
                 <motion.p
                     initial={{ opacity: 0, y: 20 }}
@@ -113,8 +114,7 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className={styles.description}
                 >
-                    I create beautiful and functional web applications
-                    with modern technologies.
+                    I specialize in creating impactful software solutions with modern technologies.
                 </motion.p>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
