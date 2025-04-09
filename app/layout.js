@@ -3,10 +3,11 @@ import { ThemeProvider } from './components/ThemeProvider';
 import { Inter } from 'next/font/google';
 import GoogleAnalytics from './components/GoogleAnalytics';
 
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-    title: 'Portfolio - Your Name',
+    title: 'Portfolio - Subhadip Dutta',
     description: 'A modern portfolio website built with Next.js and Three.js animations.',
 };
 
@@ -25,4 +26,4 @@ export default function RootLayout({ children }) {
             </body>
         </html>
     );
-} 
+}

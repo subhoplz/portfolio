@@ -31,13 +31,13 @@ const Projects = () => {
         },
         {
             id: 3,
-            title: 'AI Image Generator',
-            description: 'An AI-powered image generation tool using OpenAI\'s DALL-E API.',
-            image: '/projects/ai-generator.jpg',
-            tags: ['Python', 'React', 'OpenAI API'],
-            github: 'https://github.com/yourusername/ai-generator',
-            demo: 'https://ai-generator-demo.com',
-            category: 'ai',
+            title: 'Mess Management System ',
+            description: 'A full-stack mess management system .',
+            image: '',
+            tags: ['Java', 'NetBeans', 'MySQL'],
+            github: '',
+            demo: '',
+            category: 'fullstack',
         },
         // Add more projects as needed
     ];

@@ -14,22 +14,34 @@ const About = () => {
 
     const experiences = [
         {
-            year: '2023 - Present',
-            title: 'Senior Full Stack Developer',
-            company: 'Tech Company',
-            description: 'Leading development of modern web applications using React, Node.js, and AWS.',
+            year: 'Aug 2024 - Oct 2024',
+            title: 'Full Stack Web Developer',
+            company: 'SKOLAR',
+            description: 'Developed dynamic web applications using modern full-stack technologies. Gained hands-on experience in creating efficient, user-friendly interfaces and backend solutions.',
         },
         {
-            year: '2021 - 2023',
-            title: 'Full Stack Developer',
-            company: 'Startup',
-            description: 'Developed and maintained multiple web applications using MERN stack.',
+            year: 'Jan 2025 - Mar 2025',
+            title: 'Freelance Data Analyst',
+            company: 'LXT.ai',
+            description: 'Analyzed YouTube video content to identify patterns and categorize related/unrelated videos. Ensured accurate data processing and meaningful results for query-based tasks. Delivered consistent, high-quality results while managing time effectively.',
+        },
+    ];
+
+    const projects = [
+        {
+            name: 'e-Commerce Platform',
+            technologies: 'React, Node.js, MySQL',
+            description: 'Built a platform featuring secure payment integration, detailed product catalogs, and mobile responsiveness.',
         },
         {
-            year: '2019 - 2021',
-            title: 'Frontend Developer',
-            company: 'Digital Agency',
-            description: 'Created responsive and interactive user interfaces using React and modern CSS.',
+            name: 'Mess Management System',
+            technologies: 'Java, NetBeans, MySQL',
+            description: 'Designed a system to plan meals and create menus, track attendance and manage billing, and collect and analyze user feedback.',
+        },
+        {
+            name: 'OCR System',
+            technologies: 'Python, Kaggle, Jupyter Notebook, OpenCV, Tesseract',
+            description: 'Developed a system to digitize and extract text from images.',
         },
     ];
 
@@ -72,7 +84,8 @@ const About = () => {
                                     <motion.div
                                         className={styles.skillProgress}
                                         initial={{ width: 0 }}
-                                        whileInView={{ width: `${skill.level}%` }}
+                                        whileInView={{ width: `${skill.level}%` }
+                                        }
                                         transition={{ duration: 1, delay: index * 0.1 }}
                                         viewport={{ once: true }}
                                     />
@@ -82,7 +95,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className={styles.timelineContainer}>
+                <div className={styles.experienceContainer}>
                     <h3 className={styles.sectionTitle}>Experience</h3>
                     <div className={styles.timeline}>
                         {experiences.map((exp, index) => (
@@ -104,9 +117,29 @@ const About = () => {
                         ))}
                     </div>
                 </div>
+
+                <div className={styles.projectsContainer}>
+                    <h3 className={styles.sectionTitle}>Projects</h3>
+                    <div className={styles.projects}>
+                        {projects.map((project, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                                viewport={{ once: true }}
+                                className={styles.projectItem}
+                            >
+                                <h4 className={styles.projectTitle}>{project.name}</h4>
+                                <h5 className={styles.projectTechnologies}>{project.technologies}</h5>
+                                <p className={styles.projectDescription}>{project.description}</p>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
             </div>
         </section>
     );
 };
 
-export default About; 
+export default About;

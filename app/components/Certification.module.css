@@ -1,0 +1,26 @@
+.certification {
+    padding: 6rem 2rem;
+    background: #fff;
+}
+
+.dark .certification {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.dark .title {
+    color: #fff;
+}
