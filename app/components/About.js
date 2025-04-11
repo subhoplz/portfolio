@@ -27,23 +27,6 @@ const About = () => {
         },
     ];
 
-    const projects = [
-        {
-            name: 'e-Commerce Platform',
-            technologies: 'React, Node.js, MySQL',
-            description: 'Built a platform featuring secure payment integration, detailed product catalogs, and mobile responsiveness.',
-        },
-        {
-            name: 'Mess Management System',
-            technologies: 'Java, NetBeans, MySQL',
-            description: 'Designed a system to plan meals and create menus, track attendance and manage billing, and collect and analyze user feedback.',
-        },
-        {
-            name: 'OCR System',
-            technologies: 'Python, Kaggle, Jupyter Notebook, OpenCV, Tesseract',
-            description: 'Developed a system to digitize and extract text from images.',
-        },
-    ];
 
     return (
         <section className={styles.about} id="about">
@@ -113,26 +96,6 @@ const About = () => {
                                     <h5 className={styles.timelineCompany}>{exp.company}</h5>
                                     <p className={styles.timelineDescription}>{exp.description}</p>
                                 </div>
-                            </motion.div>
-                        ))}
-                    </div>
-                </div>
-
-                <div className={styles.projectsContainer}>
-                    <h3 className={styles.sectionTitle}>Projects</h3>
-                    <div className={styles.projects}>
-                        {projects.map((project, index) => (
-                            <motion.div
-                                key={index}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: index * 0.1 }}
-                                viewport={{ once: true }}
-                                className={styles.projectItem}
-                            >
-                                <h4 className={styles.projectTitle}>{project.name}</h4>
-                                <h5 className={styles.projectTechnologies}>{project.technologies}</h5>
-                                <p className={styles.projectDescription}>{project.description}</p>
                             </motion.div>
                         ))}
                     </div>
